@@ -22,7 +22,7 @@ Now you can run the nodes. You have different options:
    ```
    ros2 launch arm_gazebo arm_world.launch.py
    ```
- - Spawn the arm in Gazebo with the position controller
+ - Spawn the arm in Gazebo and in RVIZ with the position controller
    ```
    ros2 launch arm_gazebo arm_gazebo.launch.py
    ```
@@ -30,6 +30,7 @@ Now you can run the nodes. You have different options:
    ```
    ros2 launch arm_controller arm_controller_node.launch.py
    ```
+   Once you did that, the manipulator will reach the default position: [0.4, -0.1, 0.5, 0.4]
    It is possible to change the default position command that will be published when running this node by changing the values in params.yaml, situated in the config folder of the arm_controller package.
    Moreover, it is possible to change the position command at runtime by running the following command in a new terminal:
    ```
