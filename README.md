@@ -28,7 +28,7 @@ Now you can run the nodes. You have different options:
    ```
    After doing this, you can run the command publisher and the joint states subscriber node in a different terminal.
    ```
-   ros2 run arm_controller arm_controller_node
+   ros2 launch arm_controller arm_controller_node.launch.py
    ```
    It is possible to change the default position command that will be published when running this node by changing the values in params.yaml, situated in the config folder of the arm_controller package.
    Moreover, it is possible to change the position command at runtime by running the following command in a new terminal:
